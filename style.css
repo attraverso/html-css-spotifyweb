@@ -5,11 +5,13 @@
 }
 
 body {
-  color: #b3b3b3;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 a {
-  color: #b3b3b3;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -20,12 +22,26 @@ a:hover {
 aside {
   width: 200px;
   height: calc(100vh - 100px);
-  background-color: lightcoral;
+  background-color: #333;
   float: left;
 }
 
 aside i {
   font-size: 24px;
+}
+
+aside i:not(.odd-i) {
+  padding-right: 10px;
+}
+
+aside nav {
+  width: 90%;
+  margin-left: 5%;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
 }
 
 main {
@@ -52,9 +68,79 @@ footer {
   bottom: 0;
 }
 
+.iconbox {
+  width: 40px;
+  display: inline-block;
+}
+
 .logobox {
   width: 70%;
   margin-top: 20px;
   margin-left: 15px;
   color: #fff;
+}
+
+.md-noshow {
+  display: none;
+}
+
+.playlist-iconbox {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.xs-noshow {
+  display: inline;
+}
+
+#browse-options {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+#liked-songs-icon {
+  background: rgb(71,14,245);
+  background: linear-gradient(135deg, rgba(71,14,245,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+#playlists-container {
+  white-space: nowrap;
+  overflow: hidden auto;
+  height: 310px;
+}
+
+/* .playlists-display {
+  overflow: hidden scroll;
+} */
+
+@media screen and (max-width: 768px) {
+  aside {
+    width: 80px;
+    height: calc(100vh - 100px);
+    background-color: #333;
+    float: left;
+  }
+
+  main {
+    height: calc(100vh - 100px);
+    width: calc(100vw - 80px);
+    margin-left: 80px;
+    background-color: lightblue;
+  }
+
+  .logobox {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #fff;
+  }
+
+  .md-noshow {
+    display: inline;
+  }
+
+  .xs-noshow {
+    display: none;
+  }
 }
