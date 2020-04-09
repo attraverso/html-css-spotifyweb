@@ -3,3 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #b3b3b3;
+}
+
+a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+aside {
+  width: 200px;
+  height: calc(100vh - 100px);
+  background-color: lightcoral;
+  float: left;
+}
+
+aside i {
+  font-size: 24px;
+}
+
+main {
+  height: calc(100vh - 100px);
+  width: calc(100vw - 200px);
+  margin-left: 200px;
+  background-color: lightblue;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 0;
+}
+
+.logobox {
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 15px;
+  color: #fff;
+}
