@@ -22,7 +22,7 @@ a:hover {
 
 aside {
   width: 200px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 114px);
   background-color: #333;
   float: left;
 }
@@ -46,7 +46,7 @@ li {
 }
 
 main {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 114px);
   width: calc(100vw - 200px);
   margin-left: 200px;
   background-color: lightblue;
@@ -63,7 +63,7 @@ header {
 }
 
 footer {
-  height: 100px;
+  height: 114px;
   width: 100%;
   background-color: lightgreen;
   position: fixed;
@@ -100,10 +100,35 @@ footer {
   margin-right: 10px;
 }
 
+.capital-text {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.circle-round {
+  border: 2px solid #b3b3b3;
+  border-radius: 100%;
+}
+
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
+}
+
+.current-song::after {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  content: '\f04c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  background-color: #1db954;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
 .float {
@@ -153,20 +178,6 @@ footer {
   bottom: 15px;
   right: 15px;
 }
-.current-song::after {
-  width: 42px;
-  height: 42px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 100%;
-  content: '\f04c';
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  background-color: #1db954;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
 
 .item-holder:not(:first-child) {
   margin-left: 10px;
@@ -178,7 +189,7 @@ footer {
 }
 
 .items-wrapper {
-  background-color: lightblue;
+  background-color: lightcoral;
   display: flex;
   justify-content: space-between;
 }
@@ -217,6 +228,17 @@ footer {
   margin-top: 10px;
 }
 
+.player-controls i {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.player-controls-more i {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
 .shelf-image-wrapper img {
   width: 155px;
   height: 155px;
@@ -232,13 +254,48 @@ footer {
 
 .shelf-label-more {
   color: #a4a4a4;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .shelf-title {
   font-size: 30px;
   font-weight: 600;
+}
+
+.song-info-desc-items {
+  max-width:
+}
+
+.song-info-img-container img {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.song-info-like i {
+  margin-left: 20px;
+}
+
+.song-progress-bar {
+
+}
+
+.volume-bar {
+  width: 80px;
+  border: 2px solid #b3b3b3;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#active-device {
+  height: 24px;
+  width: 100%;
+  padding-right: 10px;
+  background-color: #1db954;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
 }
 
 #browse-options {
@@ -267,10 +324,17 @@ footer {
 #music-shelves {
   background-color: purple;
   width: calc(100vw - 200px);
-  height: calc(100vh - 100px);
-  padding-top: 80px;
+  height: calc(100vh - 114px);
+  padding-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
+  white-space: nowrap;
+  overflow: hidden auto;
+}
+
+#player-box {
+  flex-grow: 2;
+  text-align: center;
 }
 
 #playlists-container {
@@ -282,6 +346,25 @@ footer {
 #profile-pic {
   width: 28px;
   height: 28px;
+}
+
+#song-info {
+  width: 400px;
+  height: 56px;
+  /* margin: 17px 10px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+#song-player {
+  height: 90px;
+  margin: 0 10px;
+  color: #b3b3b3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1360px) {
@@ -310,7 +393,7 @@ footer {
 @media screen and (max-width: 768px) {
   aside {
     width: 80px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 114px);
     background-color: #333;
     float: left;
   }
@@ -323,7 +406,7 @@ footer {
   }
 
   main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 114px);
     margin-left: 80px;
     background-color: lightblue;
   }
