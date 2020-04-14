@@ -170,7 +170,6 @@ footer {
 .item-description {
   font-size: 12px;
   max-width: 155px;
-  /* overflow: hidden; */
 }
 
 .item-description,
@@ -241,6 +240,10 @@ footer {
   opacity: 0;
 }
 
+.player-controls {
+  margin-bottom: 10px;
+}
+
 .player-controls i {
   margin: 0 5px;
   padding: 10px;
@@ -277,6 +280,10 @@ footer {
   border-radius: 100%;
 }
 
+.shelf {
+  padding-bottom: 20px;
+}
+
 .shelf-image-wrapper {
   margin-top: 15px;
 }
@@ -304,6 +311,10 @@ footer {
   font-weight: 600;
 }
 
+.show-md {
+  display: none;
+}
+
 .song-info-desc-items {
   max-width:
 }
@@ -316,6 +327,12 @@ footer {
 
 .song-info-like i {
   margin-left: 20px;
+}
+
+.song-info-like i:hover,
+.player-controls i:hover,
+.player-controls-more i:hover {
+  color: #fff;
 }
 
 .song-progress-bar {
@@ -332,10 +349,10 @@ footer {
 #active-device {
   height: 24px;
   width: 100%;
-  padding-right: 10px;
+  padding-right: 20px;
   background-color: #1db954;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 24px;
   text-align: right;
   position: absolute;
   bottom: 0;
@@ -465,6 +482,14 @@ footer {
     margin-left: 80px;
   }
 
+  .aside-noshow-sm {
+    display: inline;
+  }
+
+  .aside-noshow-xs {
+    display: none;
+  }
+
   .items-wrapper {
     justify-content: space-around;
   }
@@ -483,8 +508,20 @@ footer {
     display: none;
   }
 
+  .shelf-title {
+    font-size: 22px;
+  }
+
   .song-info-like i {
     margin-left: 0;
+  }
+
+  #header-left {
+    margin-left: 0;
+  }
+
+  #header-right {
+    width: 100px;
   }
 
   #music-shelves {
@@ -513,5 +550,15 @@ footer {
 @media screen and (max-width: 499px) {
   .noshow-xxs {
     display: none;
+  }
+
+  .player-controls i {
+    margin: 0 5px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #song-info {
+    width: 25px;
   }
 }
