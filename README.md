@@ -2,7 +2,8 @@ April 8th, 2020
 
 ### Project description:
 
-**Last CSS-oriented project.** Replicate the Spotify web app interface as closely as possible.
+**Last CSS-oriented multi-day project.**
+Replicate the Spotify web app interface as closely as possible.
 
 ### Goals: 
 
