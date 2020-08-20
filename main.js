@@ -1,0 +1,1 @@
+document.querySelector('.disclaimer-close').addEventListener('click', () => document.querySelector('.disclaimer').style.display = 'none')

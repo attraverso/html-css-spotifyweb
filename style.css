@@ -49,14 +49,14 @@ li {
 
 main {
   height: calc(100vh - 114px);
-  width: calc(100vw - 200px);
+  width: calc(100% - 200px);
   margin-left: 200px;
   /* background-color: lightblue; */
 }
 
 header {
   height: 50px;
-  width: calc(100vw - 200px);
+  width: calc(100% - 200px);
   padding: 10px;
   background-color: rgba(0,0,0,0.4);
   position: fixed;
@@ -141,6 +141,39 @@ footer {
   right: 15px;
 }
 
+.disclaimer {
+  width: 500px;
+  height: 170px;
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 5px;
+  z-index: 20;
+  border: 5px dashed red;
+  /* border-style: ; */
+}
+
+.disclaimer-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.disclaimer-body {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer-close {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .float {
   float: left;
 }
@@ -170,6 +203,7 @@ footer {
 .item-description {
   font-size: 12px;
   max-width: 155px;
+  white-space: normal;
 }
 
 .item-description,
@@ -315,10 +349,6 @@ footer {
   display: none;
 }
 
-.song-info-desc-items {
-  max-width:
-}
-
 .song-info-img-container img {
   width: 56px;
   height: 56px;
@@ -333,10 +363,6 @@ footer {
 .player-controls i:hover,
 .player-controls-more i:hover {
   color: #fff;
-}
-
-.song-progress-bar {
-
 }
 
 .volume-bar {
